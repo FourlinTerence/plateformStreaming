@@ -1,0 +1,256 @@
+body {
+    background: rgb(2, 243, 247);
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Partie Navbar*/
+nav {
+    background: darkblue;
+    min-height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.lienNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.logo {
+    height: 8rem;
+}
+
+.connexionNav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.policeLienNav {
+    font-size: 2rem;
+}
+
+.effacer {
+    display: none;
+}
+
+
+/* Partie footer*/
+
+footer {
+    background: darkblue;
+    min-height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 10%;
+    align-items: center;
+}
+
+.textFooter {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Partie acceuil*/
+
+.boite {
+    min-height: 30rem;
+    width: 94%;
+    background: rgba(240, 239, 239, 0.779);
+    margin: 2rem auto;
+    border: 2px solid rgb(0, 179, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px #1ecee5;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.carteVideo {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    min-height: 15rem ;
+    padding: 3px;
+    border: 1px solid black;
+    background: rgba(240, 239, 239, 0.437);
+    border-radius: 10px;
+    
+}
+
+.videoContainer {
+    width: 100%;
+    height: 12rem;
+    opacity: 0.5;
+}
+
+.videoContainer:hover {
+    opacity: 1;
+}
+
+.textCarteVideo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoBouton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: inherit;
+}
+
+/* Partie recherche */
+
+.petiteBoite {
+    min-height: 5rem;
+    width: 94%;
+    background: rgba(240, 239, 239, 0.779);
+    margin: 2rem auto;
+    border: 2px solid rgb(0, 179, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px #1ecee5;
+    padding: 15px;
+}
+
+.listeRecherche {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.boutonRecherche {
+    display: block;
+    border: 0;
+    margin: 1rem auto;
+    background: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* Partie lecteur*/
+
+.boiteLecteur {
+    display: flex;
+    min-height: 50rem;
+    width: 94%;
+    background: rgba(240, 239, 239, 0.779);
+    margin: 2rem auto;
+    border: 2px solid rgb(0, 179, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px #1ecee5;
+    padding: 15px;
+}
+
+.lecteurVideo {
+    width: 80%;
+    min-height: 10rem;
+    padding: 0 5%;
+}
+
+.lecteurCategorieTag {
+    width: 20%;
+    background: rgba(240, 239, 239, 0.906);
+    margin: 2rem auto;
+    border: 2px solid rgb(0, 179, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #1ecee5;
+    padding: 15px;
+}
+
+.lecteurVideoContainer {
+    width: 100%;
+    height: 36rem;
+    margin: 2rem auto;
+
+}
+
+.lecteurCategorie{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .boite {
+        grid-template-columns: 50% 50%;
+    }
+
+    .lecteurCategorie{
+        
+        grid-template-columns: auto;
+    
+    }
+
+    .lecteurVideoContainer {
+        height: 23.5rem;
+    }
+
+    .lecteurVideo {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    /* Partie Navbar */
+    nav {
+        padding: 1rem 2%;
+    }
+
+    .connexionNav {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    
+    /* Partie footer */
+    .textFooter {
+        font-size: 1rem;
+    }
+
+    /* Partie accueil*/
+
+    .boite {
+        grid-template-columns: 100%;
+    }
+
+    /* Partie recherche */
+
+    .listeRecherche {
+        grid-template-columns: auto auto auto;
+    }
+
+    /* Partie lecteur */ 
+
+
+    
+    .lecteurVideo {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .boiteLecteur {
+        display: block;
+    }
+
+    .lecteurCategorieTag{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .lecteurVideoContainer {
+        height: 15rem;
+    }
+}
+
